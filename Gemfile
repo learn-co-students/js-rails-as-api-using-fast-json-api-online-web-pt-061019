@@ -3,6 +3,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.1'
 
+# With Fast JSON API, we can extract and separate this work into Serializer classes, keeping our controller cleaner:
+gem 'fast_jsonapi'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
